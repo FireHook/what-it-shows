@@ -1,0 +1,28 @@
+---
+layout: runbook
+title: '#4471 · two date problems'
+owner: FireHook
+status: known
+reviewed: 2026-11-09
+signature: FireHook
+---
+
+Ticket #4471 contains **412 unique reports**, not one problem repeated 412 times. The export has 427 rows because 15 report IDs occur more than once; count each report ID once.
+
+## Problems to split
+
+| Problem | Reports | Evidence |
+| --- | ---: | --- |
+| Shared parser flips dates for day-first tenants | **379** | The shared parser reads month first, while these tenants write day first. Reports arrive through the app, email, and booking forms. |
+| Booking-v3 date hint conflicts with day-first tenants | **33** | Booking-v3 shows `MM/DD/YYYY`; day-first tenants expect `DD/MM/YYYY`. These are form reports from the booking-v3 tenants. |
+
+Use the tenant's configured locale and booking form to classify a report. The browser locale and intake tag are guesses, not the source of truth. The five reports listed in `desk-notes.json` as one-day moves remain within the parser group under the export's tenant/channel rules; they are not an additional cause group.
+
+The 379 parser reports and 33 booking-hint reports account for all 412 unique reports merged into #4471. File one ticket per problem so each fix and its affected report count can be tracked separately.
+
+<script>
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  const signature = 'FireHook';
+</script>
+
+<RenderStamp {signature} />
