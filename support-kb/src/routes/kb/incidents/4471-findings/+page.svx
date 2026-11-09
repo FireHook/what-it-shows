@@ -28,7 +28,6 @@ Close the parser ticket as completed and the booking-v3 hint ticket as not plann
 
 <script>
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'FireHook';
 </script>
 
 <RenderStamp {signature} />
