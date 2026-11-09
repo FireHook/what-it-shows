@@ -43,6 +43,9 @@
       </table>
       <p>Use the tenant's configured locale and booking form to classify a report. The browser locale and intake tag are guesses, not the source of truth. The five reports listed in <code>desk-notes.json</code> as one-day moves remain within the parser group under the export's tenant/channel rules; they are not an additional cause group.</p>
       <p>The 379 parser reports and 33 booking-hint reports account for all 412 unique reports merged into #4471. File one ticket per problem so each fix and its affected report count can be tracked separately.</p>
+      <h2>Engineering update · October 5, 2026</h2>
+      <p>The shared parser problem is fixed by <code>fix(dates): parse dd/mm for eu locales</code>. The booking-v3 hint problem will not be fixed because the booking-v3 form has been retired.</p>
+      <p>Close the parser ticket as completed and the booking-v3 hint ticket as not planned.</p>
       <p class="stamp">desk ref <b>DR-H9BH-Y3PJ</b></p>
     </main>
     <footer>Pages are written by people. Tables and charts are built from data at render time.</footer>

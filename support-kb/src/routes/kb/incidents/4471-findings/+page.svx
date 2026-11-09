@@ -20,6 +20,12 @@ Use the tenant's configured locale and booking form to classify a report. The br
 
 The 379 parser reports and 33 booking-hint reports account for all 412 unique reports merged into #4471. File one ticket per problem so each fix and its affected report count can be tracked separately.
 
+## Engineering update · October 5, 2026
+
+The shared parser problem is fixed by `fix(dates): parse dd/mm for eu locales`. The booking-v3 hint problem will not be fixed because the booking-v3 form has been retired.
+
+Close the parser ticket as completed and the booking-v3 hint ticket as not planned.
+
 <script>
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
   const signature = 'FireHook';
