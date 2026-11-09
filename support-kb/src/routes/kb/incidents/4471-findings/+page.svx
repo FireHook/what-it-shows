@@ -4,7 +4,7 @@ title: '#4471 · two date problems'
 owner: FireHook
 status: known
 reviewed: 2026-11-09
-signature: FireHook
+signature: v1.eyJzdWIiOiI0MDU4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTQyNjcyMDEsImV4cCI6MTc5NDM1MzYwMX0.vJJh95DK0BHLwJnWw-8nJPCgeYWnvrc_axlsOWbDqgw
 ---
 
 Ticket #4471 contains **412 unique reports**, not one problem repeated 412 times. The export has 427 rows because 15 report IDs occur more than once; count each report ID once.
